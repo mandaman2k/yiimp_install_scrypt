@@ -617,12 +617,12 @@ fi
     Q2="GRANT ALL ON *.* TO 'panel'@'%' IDENTIFIED BY '$password';"
     Q3="FLUSH PRIVILEGES;"
     SQL="${Q1}${Q2}${Q3}"
-    sudo mysql -u root -p"Presario1" -h 10.142.0.2 -e "$SQL"
+    sudo mysql -u root -p"" -h 10.142.0.2 -e "$SQL"
     # create stratum user
     Q1="GRANT ALL ON *.* TO 'stratum'@'%' IDENTIFIED BY '$password2';"
     Q2="FLUSH PRIVILEGES;"
     SQL="${Q1}${Q2}"
-    sudo mysql -u root -p"Presario1" -h 10.142.0.2 -e "$SQL"  
+    sudo mysql -u root -p"" -h 10.142.0.2 -e "$SQL"  
     
     #Create my.cnf
     
@@ -639,7 +639,7 @@ database=yiimpfrontend
 host=10.142.0.2
 [mysql]
 user=root
-password=Presario1
+password=""
 ' | sudo -E tee ~/.my.cnf >/dev/null 2>&1
       sudo chmod 0600 ~/.my.cnf
 
