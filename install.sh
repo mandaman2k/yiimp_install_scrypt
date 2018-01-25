@@ -74,7 +74,7 @@ default         0;
     sudo phpenmod mcrypt
     sudo phpenmod mbstring
     sudo aptitude -y install libgmp3-dev
-    sudo aptitude -y install libmysqlclient-dev
+    sudo aptitude -y install libmysqlclient-dev mysql-client
     sudo aptitude -y install libcurl4-gnutls-dev
     sudo aptitude -y install libkrb5-dev
     sudo aptitude -y install libldap2-dev
